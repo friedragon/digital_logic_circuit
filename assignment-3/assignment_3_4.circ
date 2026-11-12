@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1080,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(590,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="clr"/>
+    </comp>
+    <comp lib="0" loc="(720,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="q"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(720,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="nq"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(80,230)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="j"/>
+    </comp>
+    <comp lib="0" loc="(80,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(80,430)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="k"/>
+    </comp>
+    <comp lib="0" loc="(860,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(860,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(860,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(860,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(860,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="1" loc="(140,330)" name="NOT Gate"/>
+    <comp lib="1" loc="(220,230)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(220,430)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(350,250)" name="NAND Gate"/>
+    <comp lib="1" loc="(350,410)" name="NAND Gate"/>
+    <comp lib="1" loc="(540,230)" name="NAND Gate"/>
+    <comp lib="1" loc="(540,430)" name="NAND Gate"/>
+    <comp lib="1" loc="(650,250)" name="NAND Gate"/>
+    <comp lib="1" loc="(650,410)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp loc="(1080,280)" name="jk_flipflop"/>
+    <wire from="(100,330)" to="(100,550)"/>
+    <wire from="(100,330)" to="(110,330)"/>
+    <wire from="(100,550)" to="(420,550)"/>
+    <wire from="(130,180)" to="(130,210)"/>
+    <wire from="(130,180)" to="(690,180)"/>
+    <wire from="(130,210)" to="(160,210)"/>
+    <wire from="(130,450)" to="(130,480)"/>
+    <wire from="(130,450)" to="(160,450)"/>
+    <wire from="(130,480)" to="(700,480)"/>
+    <wire from="(140,330)" to="(150,330)"/>
+    <wire from="(150,250)" to="(150,330)"/>
+    <wire from="(150,250)" to="(160,250)"/>
+    <wire from="(150,330)" to="(150,410)"/>
+    <wire from="(150,410)" to="(160,410)"/>
+    <wire from="(220,230)" to="(290,230)"/>
+    <wire from="(220,430)" to="(290,430)"/>
+    <wire from="(260,270)" to="(260,310)"/>
+    <wire from="(260,270)" to="(290,270)"/>
+    <wire from="(260,310)" to="(380,310)"/>
+    <wire from="(260,350)" to="(260,390)"/>
+    <wire from="(260,350)" to="(390,350)"/>
+    <wire from="(260,390)" to="(290,390)"/>
+    <wire from="(350,250)" to="(390,250)"/>
+    <wire from="(350,410)" to="(380,410)"/>
+    <wire from="(380,310)" to="(380,410)"/>
+    <wire from="(380,410)" to="(480,410)"/>
+    <wire from="(390,250)" to="(390,350)"/>
+    <wire from="(390,250)" to="(480,250)"/>
+    <wire from="(420,330)" to="(420,550)"/>
+    <wire from="(420,330)" to="(470,330)"/>
+    <wire from="(470,210)" to="(470,330)"/>
+    <wire from="(470,210)" to="(480,210)"/>
+    <wire from="(470,330)" to="(470,450)"/>
+    <wire from="(470,450)" to="(480,450)"/>
+    <wire from="(540,230)" to="(590,230)"/>
+    <wire from="(540,430)" to="(590,430)"/>
+    <wire from="(550,320)" to="(550,390)"/>
+    <wire from="(550,320)" to="(670,320)"/>
+    <wire from="(550,390)" to="(590,390)"/>
+    <wire from="(580,270)" to="(580,350)"/>
+    <wire from="(580,270)" to="(590,270)"/>
+    <wire from="(580,350)" to="(670,350)"/>
+    <wire from="(650,250)" to="(670,250)"/>
+    <wire from="(650,410)" to="(670,410)"/>
+    <wire from="(670,250)" to="(670,320)"/>
+    <wire from="(670,250)" to="(700,250)"/>
+    <wire from="(670,350)" to="(670,410)"/>
+    <wire from="(670,410)" to="(690,410)"/>
+    <wire from="(690,180)" to="(690,410)"/>
+    <wire from="(690,410)" to="(720,410)"/>
+    <wire from="(700,250)" to="(700,480)"/>
+    <wire from="(700,250)" to="(720,250)"/>
+    <wire from="(80,230)" to="(160,230)"/>
+    <wire from="(80,330)" to="(100,330)"/>
+    <wire from="(80,430)" to="(160,430)"/>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="jk_flipflop">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY jk_flipflop IS
+  PORT (
+    clk : IN  std_logic;
+    j   : IN  std_logic;
+    k   : IN  std_logic;
+    clr : IN  std_logic;
+    set : IN  std_logic;
+    q   : OUT std_logic
+  );
+END ENTITY jk_flipflop;
+
+ARCHITECTURE bhv OF jk_flipflop IS
+  SIGNAL q_internal : std_logic := '0';
+BEGIN
+  q &lt;= q_internal;
+  process(clk, clr, set)
+  begin
+    if clr = '1' then
+      q_internal &lt;= '0';
+    elsif set = '1' then
+      q_internal &lt;= '1';
+    elsif (clk'event and clk = '1') then
+      if (j = '1' and k = '0') then
+        q_internal &lt;= '1';
+      elsif (j = '0' and k = '1') then
+        q_internal &lt;= '0';
+      elsif (j = '1' and k = '1') then
+        q_internal &lt;= not q_internal;
+      end if;
+    end if;
+  end process;
+END ARCHITECTURE bhv;</vhdl>
+</project>
